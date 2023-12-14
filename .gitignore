@@ -1,0 +1,6 @@
+composer.phar
+/vendor/
+imaginary-file.txt
+.env
+storage/uploads/*
+!storage/uploads/.gitkeep
