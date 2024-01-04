@@ -32,3 +32,4 @@ CREATE TABLE IF NOT EXISTS receipts(
   PRIMARY KEY (id),
   FOREIGN KEY(transaction_id) REFERENCES transactions (id) ON DELETE CASCADE
 );
+

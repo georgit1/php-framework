@@ -9,8 +9,6 @@ class App
   private Router $router;
   private Container $container;
 
-
-
   public function __construct(string $containerDefinitionsPath = null)
   {
     $this->router = new Router();
@@ -18,7 +16,7 @@ class App
 
     if ($containerDefinitionsPath) {
       $containerDefinitions = include $containerDefinitionsPath;
-      $this->container->addDefinition($containerDefinitions);
+      $this->container->addDefinitions($containerDefinitions);
     }
   }
 
